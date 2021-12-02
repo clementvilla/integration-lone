@@ -1,3 +1,18 @@
-body{
-    background: red;
+// Foundation
+@import "foundation/variables";
+@import "foundation/mixins";
+@import "foundation/functions";
+
+// Objects
+@import "objects/grid";
+
+// Components
+@import "components/product";
+
+// Elements
+@import "elements/button";
+
+html{
+    font-size: $rootFontSize + px;
 }
+

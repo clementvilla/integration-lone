@@ -1,0 +1,12 @@
+@mixin title {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@mixin small-up {
+    @media all and(min-width : 640px) {
+        color: hotpink;
+        @content;
+    }
+
+}

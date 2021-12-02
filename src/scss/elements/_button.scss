@@ -1,0 +1,15 @@
+.button{
+    color: $black;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: $fontButton;
+    font-size: pxToRem(20);
+    transform:skewX(30deg);
+    display: block;
+}
+
+.cont{
+    background-color: $primaryColor;
+    transform:skewX(-30deg);
+    
+}
