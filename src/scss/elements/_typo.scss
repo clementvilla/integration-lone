@@ -29,6 +29,9 @@ $fontText: "Open Sans", Arial, sans-serif;
   .titleH3{
     font-family: $fontTitle; 
     @include font-size(18, 22);
+    &.-colorWhite{
+      color: $white;
+    }
   }
 
 
