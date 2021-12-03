@@ -1,0 +1,61 @@
+//font title
+$fontTitle: "Rubik Mono One", Arial, sans-serif;
+$fontText: "Open Sans", Arial, sans-serif;
+
+
+.titleH1{
+    font-family: $fontTitle; 
+    color: $primaryColor;
+    &.-colorWhite{
+        color: $white;
+    }
+    @include font-size(64, 79);
+   
+    @include small-down(){
+      @include font-size(24, 30);
+    }
+  }
+
+  .titleH2{
+    font-family: $fontTitle; 
+    color: $primaryColor;
+    @include font-size(36, 45);
+   
+    @include small-down(){
+      @include font-size(24, 30);
+    }
+  }
+
+  .titleH3{
+    font-family: $fontTitle; 
+    @include font-size(18, 22);
+  }
+
+
+//Font texte
+
+.text{
+  font-family: $fontText;
+  color: $white;
+  &.-colorBlack{
+    color: $black;
+  }
+  @include font-size(18, 25);
+   
+    @include small-down(){
+      @include font-size(16, 22);
+    }
+
+}
+
+.fontFooter{
+  font-family: $fontText; 
+  &.-footerTitle{
+    font-family: $fontTitle;
+  }
+  color: $white;
+  @include font-size(12, 26);
+  &.-fontCGU{
+    @include font-size(10,26);
+  }
+}
