@@ -2,8 +2,7 @@ $rootFontSize : 16;
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Rubik+Mono+One&display=swap');
 
-
-//Color
+// Couleurs
 $primaryColor: #5EFC8D;
 $black: #1F1F1F;
 $white: #FBF5F3;
@@ -16,9 +15,14 @@ $fontText: "Open Sans", Arial, sans-serif;
 // bouton
 $fontButton: "rubik mono one", Arial, sans-serif; 
 
+// Fonts
+$textFont : "Open Sans", Arial;
+$titleFont : "Roboto Condensed", Arial;
 
 // breakpoints
 $small : 460px;
 $medium : 640px;
 $large : 960px;
 $x-large : 1200px;
+
+
