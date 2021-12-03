@@ -14,33 +14,4 @@
 
 // Components 
 
-
-html{
-  font-size: $rootFontSize + px;
-  &.dark-mode{
-    background : $grey;
-  }
-}
-
-/*
-@media print {
-  body{
-    padding: 100px;
-  }
-  #id-text{
-    display: none;
-  }
- }
-
-
- @media all and (orientation : landscape) {
-   body {
-     background : red;
-   }
- }
-
- @media all and (max-width : 640px){
- }
- */
-
  
