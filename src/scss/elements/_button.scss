@@ -43,6 +43,9 @@
             top: 0; 
         }
     }
+    .button {
+        text-align: unset;
+    }
     &.-backgroundBlack {
         background: $black;
         &::after {
