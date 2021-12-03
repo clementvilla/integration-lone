@@ -7,16 +7,12 @@
   box-sizing: border-box;
 }
 // Elements 
-@import "elements/buttons";
-@import "elements/input";
-@import "elements/title";
+@import "elements/button";
 
 // Objects
 @import "objects/grid";
 
 // Components 
-@import "components/product";
-@import "components/form";
 
 
 html{
