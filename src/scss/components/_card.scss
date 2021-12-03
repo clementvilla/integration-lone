@@ -3,15 +3,43 @@
     border-radius: 22px;
     height: 300px;
     padding: 60px 15px;
-    .c-card__innerContainer *{
-        display: block;
-        margin: auto;
-        padding: 20px 0;
+    .c-card__innerContainer {
         text-align: center;
     }
-
     svg{
         width: 25px;
         color: white;
+        animation: none;
+        z-index: 2;
     }
+    .c-card_svgContainer{
+        width: 75px;
+        height: 75px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        position: relative;
+        &::after{
+            border: solid 3px transparent;
+            content: "";
+            display: block;
+            height: 100%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            position: absolute;
+            border-radius: 100%;
+            background: 
+        linear-gradient($grey, $grey) padding-box,
+        conic-gradient(from 45deg, $primaryColor, $grey) border-box;
+        animation: rotate linear 2000ms infinite;
+        }
+    }
+    @keyframes rotate {
+        from {transform: rotate(0deg);}
+      
+        to {transform: rotate(360deg);}
+      }
 }
