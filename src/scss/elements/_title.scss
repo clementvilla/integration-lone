@@ -1,0 +1,10 @@
+.title{
+  @include font-size(16, 14);
+ 
+  @include small-down(){
+    @include font-size(14);
+  }
+  @include x-large-up(){
+    @include font-size(32, 40);
+  }
+}

@@ -1,5 +1,9 @@
 @use "sass:math";
 
-@function pxToRem($value){
-    @return math.div($value, $rootFontSize) + rem
+@function pxToRem($value) {
+  @return math.div($value, $rootFontSize) + rem;
+}
+
+@function calculate-width($i){
+  @return math.div($i, 12) * 100%;
 }

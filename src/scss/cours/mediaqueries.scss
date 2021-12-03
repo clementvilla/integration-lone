@@ -1,0 +1,30 @@
+// Mediaquery pour le print 
+@media print {
+  body{
+    padding: 100px;
+  }
+  #id-text{
+    display: none;
+  }
+ }
+
+// Mediaquery pour tous les supports AVEC une orientation "paysage
+ @media all and (orientation : landscape) {
+   body {
+     background : red;
+   }
+ }
+
+// Mediaquery pour tous les supports AVEC un navigateur de 640px de large maximum
+ @media all and (max-width : 640px){
+  body {
+    background: green;
+  }
+ }
+
+// Mediaquery pour tous les supports AVEC un navigateur entre 640px et 800px de large
+ @media all and (min-width: 640px) and (max-width : 800px){
+   body{
+     background : pink
+   }
+ }

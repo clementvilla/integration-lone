@@ -1,0 +1,14 @@
+.input{
+  padding: pxToRem(16);
+  border: 1px solid $lightGrey;
+  font-size: pxToRem(16);
+  color: $lightGrey;
+  font-family: $textFont;
+  &:focus{
+    outline: 1px solid $darkGrey;
+  }
+  &.-error{
+    border-color: $error;
+    color: $error;
+  }
+}

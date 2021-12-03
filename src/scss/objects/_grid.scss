@@ -1,12 +1,73 @@
 @use "sass:math";
 
-.row{
-    display: flex;
-    flex-wrap: wrap;
+$maxColumns : 12;
+
+.container{
+    max-width: 1200px;
+    margin : 0 auto;
+
 }
 
-@for $i from 1 through 12 {
+.row{
+    display : flex;
+    flex-wrap: wrap;
+    &.-center{
+      justify-content:center;
+    }
+    &.-vcenter{
+        align-items: center;
+    }
+
+}
+
+div[class^="col"]{
+  padding: 1rem;
+  &:nth-of-type(1){
+    background : hotpink;
+  }&:nth-of-type(2){
+    background : goldenrod;
+  }&:nth-of-type(3){
+    background :blanchedalmond;
+  }&:nth-of-type(4){
+    background : coral;
+  }
+}
+
+@for $i from 1 through $maxColumns{
     .col-#{$i}{
-        width : math.div($i, 12) * 100%; 
+        flex-basis : calculate-width($i);
+        max-width: calculate-width($i);
+    }
+    
+}
+
+@include medium-up(){
+    @for $i from 1 through $maxColumns{
+        .col-md-#{$i}{
+            flex-basis : calculate-width($i);
+            max-width: calculate-width($i);
+        }
+       
     }
 }
+
+@include large-up(){
+    @for $i from 1 through $maxColumns{
+        .col-l-#{$i}{
+            flex-basis : calculate-width($i);
+            max-width: calculate-width($i);
+        }
+    }
+}
+@include x-large-up(){
+    @for $i from 1 through $maxColumns{
+        .col-xl-#{$i}{
+            flex-basis : calculate-width($i);
+            max-width: calculate-width($i);
+        }
+    }
+}
+
+
+
+

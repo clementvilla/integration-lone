@@ -1,18 +1,50 @@
-// Foundation
+// Foundations
 @import "foundation/variables";
-@import "foundation/mixins";
 @import "foundation/functions";
+@import "foundation/mixins";
+
+*{
+  box-sizing: border-box;
+}
+// Elements 
+@import "elements/buttons";
+@import "elements/input";
+@import "elements/title";
 
 // Objects
 @import "objects/grid";
 
-// Components
+// Components 
 @import "components/product";
+@import "components/form";
 
-// Elements
-@import "elements/button";
 
 html{
-    font-size: $rootFontSize + px;
+  font-size: $rootFontSize + px;
+  &.dark-mode{
+    background : $grey;
+  }
 }
 
+/*
+@media print {
+  body{
+    padding: 100px;
+  }
+  #id-text{
+    display: none;
+  }
+ }
+
+
+ @media all and (orientation : landscape) {
+   body {
+     background : red;
+   }
+ }
+
+ @media all and (max-width : 640px){
+ }
+ */
+
+ 

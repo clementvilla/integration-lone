@@ -1,0 +1,22 @@
+.c-prod{
+  $this : &;
+  padding: 1rem;
+  border : 1px solid $grey;
+  display: inline-block;
+  &:hover{
+    #{$this}__category{
+      background :hotpink;
+    }
+  }
+  &__category{
+    background: $grey;
+    color: white;
+  }
+  &__image{
+    margin: 1rem;
+  }
+  &__desc{
+    color : red;
+  }
+  
+}
