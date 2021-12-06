@@ -2,19 +2,22 @@
 @import "foundation/variables";
 @import "foundation/functions";
 @import "foundation/mixins";
-@import "elements/typo";
-@import "components/card";
-@import "components/carreGris";
 
-* {
-  box-sizing: border-box;
-}
 // Elements 
 @import "elements/button";
+@import "elements/typo";
 
 // Objects
 @import "objects/grid";
 
 // Components 
+@import "components/carreGris";
+@import "components/card";
 
- 
+* {
+  box-sizing: border-box;
+}
+
+html{
+  background-color: $black;
+}

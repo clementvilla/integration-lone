@@ -1,13 +1,13 @@
-#carreGris{
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.carreGris1, .carreGris3 {
-    background: $white 25%;
-}
-
-.carreGris2{
-
+.c-carreGris{
+    text-align: center;
+    background-color: rgba($white, 0.25);
+    padding: pxToRem(16);
+    &__title{
+        span{
+            color: $primaryColor;
+        }
+    }
+    &.-darker{
+        background-color: rgba($white, 0.1);
+    }
 }
