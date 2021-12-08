@@ -3,13 +3,10 @@
 @import "foundation/functions";
 @import "foundation/mixins";
 @import "elements/typo";
-@import "components/card";
 
-*{
-  box-sizing: border-box;
-}
 // Elements 
 @import "elements/button";
+@import "elements/typo";
 
 // Objects
 @import "objects/grid";
@@ -17,3 +14,48 @@
 // Components 
 @import "components/header";
  
+@import "components/card";
+@import "components/carreGris";
+@import "components/sectionImageTexte";
+@import "components/bandeauFaq";
+@import "components/footer";
+
+* {
+  box-sizing: border-box;
+}
+li{
+  list-style: none;
+}
+
+html{
+  background-color: $black;
+}
+body{
+  margin: 0;
+}
+
+.container__wrap{
+  max-width: 1300px;
+  margin: auto;
+}
+
+.lineTitle{
+  position: relative;
+  padding-left: 15px;
+  &::before{
+      content: "";
+      background-color: $primaryColor;
+      height: 90%;
+      width: 7px;
+      left: 0;
+      position: absolute;
+      border-radius: 50px;
+      transform: skewX(-10deg);
+  }
+  &.-smallLine{
+      padding-left: 10px;
+      &::before{
+          width: 3px;
+      }
+  }
+}

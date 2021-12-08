@@ -2,7 +2,10 @@
     background-color: $grey;
     border-radius: 22px;
     height: 300px;
-    padding: 60px 15px;
+    padding: 0px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     .c-card__innerContainer {
         text-align: center;
     }
@@ -12,10 +15,12 @@
         animation: none;
         z-index: 2;
     }
+    h3{
+        margin-bottom: 20px;
+    }
     .c-card_svgContainer{
         width: 75px;
         height: 75px;
-        
         display: flex;
         justify-content: center;
         align-items: center;
@@ -26,16 +31,24 @@
             content: "";
             display: block;
             height: 100%;
-            top: 0;
-            left: 0;
             width: 100%;
             position: absolute;
             border-radius: 100%;
-            background: 
-        linear-gradient($grey, $grey) padding-box,
-        conic-gradient(from 45deg, $primaryColor, $grey) border-box;
-        animation: rotate linear 2000ms infinite;
+            background: linear-gradient($grey, $grey) padding-box, conic-gradient(from 45deg, $primaryColor, $grey) border-box;
+            animation: rotate linear 2000ms infinite;
+        }  
+        &.-delay1::after{
+            animation-delay: 1000ms;
+        }   
+        &.-delay2::after{
+            animation-delay: 2000ms;
         }
+        &.-delay3::after{
+            animation-delay: 3000ms;
+        }
+        &.-delay4::after{
+            animation-delay: 4000ms;
+        }   
     }
     @keyframes rotate {
         from {transform: rotate(0deg);}

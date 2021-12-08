@@ -3,41 +3,32 @@ $fontTitle: "Rubik Mono One", Arial, sans-serif;
 $fontText: "Open Sans", Arial, sans-serif;
 
 
-.titleH1{
-    font-family: $fontTitle; 
-    color: $primaryColor;
-    &.-colorWhite{
-        color: $white;
-    }
-    @include font-size(64, 79);
-   
-    @include small-down(){
-      @include font-size(24, 30);
-    }
+.title{
+  margin: 0;
+  font-family: $fontTitle; 
+  color: $primaryColor;
+  @include font-size(36, 45);
+  @include small-down(){
+    @include font-size(24, 30);
   }
-
-  .titleH2{
-    font-family: $fontTitle; 
-    color: $primaryColor;
-    @include font-size(36, 45);
-   
-    @include small-down(){
-      @include font-size(24, 30);
-    }
-  }
-
-  .titleH3{
-    font-family: $fontTitle; 
+  &.-small{
     @include font-size(18, 22);
-    &.-colorWhite{
-      color: $white;
+  }
+  &.-big{
+    @include font-size(64, 79);
+    @include small-down(){
+      @include font-size(24, 30);
     }
   }
+  &.-colorWhite{
+    color: $white;
 
+  }
+}
 
 //Font texte
 
-.text{
+p{
   font-family: $fontText;
   color: $white;
   &.-colorBlack{

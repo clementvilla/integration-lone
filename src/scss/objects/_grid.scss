@@ -3,7 +3,7 @@
 $maxColumns : 12;
 
 .container{
-    max-width: 1200px;
+    max-width: 1520px;
     margin : 0 auto;
 
 }
@@ -17,13 +17,20 @@ $maxColumns : 12;
     &.-vcenter{
         align-items: center;
     }
+    &.-noGutter{
+        div[class^="col"]{
+            padding: 0;
+          
+          }
+    }
+    div[class^="col"]{
+        padding: 1rem;
+      
+      }
 
 }
 
-div[class^="col"]{
-  padding: 1rem;
 
-}
 
 @for $i from 1 through $maxColumns{
     .col-#{$i}{
