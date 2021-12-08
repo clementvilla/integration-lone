@@ -3,10 +3,6 @@
 @import "foundation/functions";
 @import "foundation/mixins";
 @import "elements/typo";
-@import "components/card";
-@import "components/carreGris";
-@import "components/sectionImageTexte";
-@import "components/bandeauFaq";
 
 // Elements 
 @import "elements/button";
@@ -16,15 +12,26 @@
 @import "objects/grid";
 
 // Components 
-@import "components/carreGris";
+@import "components/header";
+ 
 @import "components/card";
+@import "components/carreGris";
+@import "components/sectionImageTexte";
+@import "components/bandeauFaq";
+@import "components/footer";
 
 * {
   box-sizing: border-box;
 }
+li{
+  list-style: none;
+}
 
 html{
   background-color: $black;
+}
+body{
+  margin: 0;
 }
 
 .container__wrap{
@@ -51,5 +58,4 @@ html{
           width: 3px;
       }
   }
-  
 }

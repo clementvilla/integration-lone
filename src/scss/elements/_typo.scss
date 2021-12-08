@@ -53,3 +53,15 @@ p{
     @include font-size(10,26);
   }
 }
+
+.fontLink{
+  font-family: $fontText;
+  color: $white;
+  text-decoration: none;
+  @include font-size(18, 25);
+   
+    @include small-down(){
+      @include font-size(16, 22);
+    }
+
+}
