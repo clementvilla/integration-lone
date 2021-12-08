@@ -4,6 +4,7 @@ $fontText: "Open Sans", Arial, sans-serif;
 
 
 .title{
+  margin: 0;
   font-family: $fontTitle; 
   color: $primaryColor;
   @include font-size(36, 45);

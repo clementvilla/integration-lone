@@ -10,18 +10,4 @@
     .c-text__innerContainer{
         margin: 100px 0;
     }
-    .lineTitle{
-        position: relative;
-        padding-left: 15px;
-        &::before{
-            content: "";
-            background-color: $primaryColor;
-            height: 100%;
-            width: 7px;
-            left: 0;
-            position: absolute;
-            border-radius: 50px;
-            transform: skewX(-10deg);
-        }
-    }
 }
