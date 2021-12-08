@@ -1,11 +1,12 @@
-.c-carreGris{
+.c-carreGris__container{
     text-align: center;
     background-color: rgba($white, 0.25);
     padding: pxToRem(16);
-    &__title{
-        span{
-            color: $primaryColor;
-        }
+    height: 450px;
+    display: flex;
+    align-items: center;
+    span{
+        color: $primaryColor;
     }
     &.-darker{
         background-color: rgba($white, 0.1);

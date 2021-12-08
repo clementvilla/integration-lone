@@ -32,6 +32,14 @@ html{
 }
 body{
   margin: 0;
+  position: relative;
+}
+.ligne_fond{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -999;
+  max-width: 100%;
 }
 
 .container__wrap{
@@ -59,3 +67,14 @@ body{
       }
   }
 }
+
+.homeEntete{
+  padding: 150px 0px;
+  .row{
+    div:first-child{
+      img{width: 100%;}
+    }
+  }
+} 
+
+
