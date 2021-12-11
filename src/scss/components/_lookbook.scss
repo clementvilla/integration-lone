@@ -1,0 +1,13 @@
+.c-container__lookbook{
+    div{
+        width: 200px;
+        height: 600px;
+        margin: 20px;
+        background-image: url('/src/img/m22_home_concept.png');
+        background-size: cover;
+        transition: 0.5s ease-in-out;
+    }
+    div:hover{
+        width: 400px;
+    }
+}

@@ -1,6 +1,5 @@
 footer{
-    max-width: 1100px;
-    margin: auto;
+    
     h3{
         margin-top: 0;
     }
@@ -32,15 +31,18 @@ footer{
     margin: auto;
     margin-bottom: 70px;
 }
-.c-footer__container .row{
-    div:first-child{
-        img{
-            width: 200px;
-            display: block;
-            margin: auto;
+.c-footer__container{
+    max-width: 1100px;
+    margin: auto;
+    .row{
+        div:first-child{
+            img{
+                width: 200px;
+                display: block;
+                margin: auto;
+            }
         }
-    }
-    
+    } 
 }
 
 .c-footer_containerSocialNetwork{
@@ -50,8 +52,14 @@ footer{
     svg{
         height: 25px;
         width: auto;
+        transition: 0.25s ease-in-out;
+        cursor: pointer;
+        
         &:nth-child(n+2){
             margin-left: 30px;
+        }
+        &:hover{
+            color: $primaryColor;
         }
     }
 }
@@ -60,7 +68,9 @@ footer{
     width: 100%;
     color: $black;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-end;
-
+    p{
+        margin: 0;
+    }
 }
