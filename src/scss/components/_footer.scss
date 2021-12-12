@@ -66,10 +66,10 @@ footer{
 
 .c-footer__containerCGU{
     width: 100%;
-    color: $black;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
+    background-color: $black;
     p{
         margin: 0;
     }
