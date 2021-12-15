@@ -33,6 +33,15 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './src/contact.html'),
       filename : "contact.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/mentionlegales.html'),
+      filename : "mentionlegales.html",
+    }),
+
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/faq.html'),
+      filename : "faq.html",
     })
   ],
   // Liste des règles à suivre par webpack

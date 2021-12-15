@@ -23,6 +23,16 @@ module.exports = {
       filename : "contact.html",
       minify: true
     }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/mentionlegales.html'),
+      filename : "mentionlegales.html",
+      minify: true
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/faq.html'),
+      filename : "faq.html",
+      minify: true
+    })
   ],
 
   module: {
