@@ -20,6 +20,9 @@ $maxColumns : 12;
     &.-vcenter{
         align-items: center;
     }
+    &.-nowrap{
+        flex-wrap: nowrap;
+    }
     &.-noGutter{
         div[class^="col"]{
             padding: 0;
@@ -35,9 +38,7 @@ $maxColumns : 12;
     }
     div[class^="col"]{
         padding: 2rem;
-      
-      }
-
+    }
 }
 
 

@@ -8,6 +8,10 @@
         transition: 0.5s ease-in-out;
     }
     div:hover{
-        width: 400px;
+        width: 500px;
     }
+}
+.splide__slide img {
+    width: 100%;
+    height: auto;
 }
