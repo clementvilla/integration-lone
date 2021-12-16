@@ -20,6 +20,9 @@ $maxColumns : 12;
     &.-vcenter{
         align-items: center;
     }
+    &.-nowrap{
+        flex-wrap: nowrap;
+    }
     &.-noGutter{
         div[class^="col"]{
             padding: 0;
@@ -29,11 +32,13 @@ $maxColumns : 12;
     &.-reverse{
         flex-direction: row-reverse;
     }
+    &.-flex-end{
+        justify-content: flex-end;
+        margin-right: 100px;
+    }
     div[class^="col"]{
-        padding: 1rem;
-      
-      }
-
+        padding: 2rem;
+    }
 }
 
 

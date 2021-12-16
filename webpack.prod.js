@@ -36,6 +36,26 @@ module.exports = {
       filename : "connexion.html",
     }),
 
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/creations.html'),
+      filename : "creations.html",
+      minify: true
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/precommannde.html'),
+      filename : "precommande.html",
+      minify: true
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/mentionlegales.html'),
+      filename : "mentionlegales.html",
+      minify: true
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/faq.html'),
+      filename : "faq.html",
+      minify: true
+    })
   ],
 
   module: {

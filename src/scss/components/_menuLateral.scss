@@ -1,14 +1,24 @@
 .c-menuLateral{
+    top: 0px;
+    right: 0px;
+    position: fixed;
+    writing-mode: vertical-lr;
     display: flex;
-    transform: rotate(90deg);
-    position: absolute;
-    top: 0;
-    right: 25px;
+    justify-content: space-between;
+    height: 88vh;
+    margin-top: 110px;
     div{
         font-size: 30px;
         color: $black;
         -webkit-text-stroke: 1px $primaryColor;
         font-family: $fontTitle;
         margin:10px;
+        width: fit-content;
+        height: fit-content;
+    }
+}
+@media (max-width:1400px){
+    .c-menuLateral{
+        display: none;
     }
 }
