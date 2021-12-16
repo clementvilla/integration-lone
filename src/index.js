@@ -1,5 +1,4 @@
 import "./scss/main.scss";
-import "./exercice.js"
 /*
 let chaussure = {
     bande1: "blanc",
