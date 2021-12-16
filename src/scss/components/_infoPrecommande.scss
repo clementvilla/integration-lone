@@ -1,0 +1,9 @@
+.c-precommande__innerContainer {
+    display: flex;
+    justify-content: center;
+    &.-colone1, &.-colone2, &.-colone3 {
+        display: flex;
+        flex-direction: column;
+        padding: 0 70px;
+    }
+}

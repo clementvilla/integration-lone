@@ -37,6 +37,23 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './src/personnalisation.html'),
       filename : "personnalisation.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/creations.html'),
+      filename : "creations.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/precommande.html'),
+      filename : "precommande.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/mentionlegales.html'),
+      filename : "mentionlegales.html",
+    }),
+
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/faq.html'),
+      filename : "faq.html",
     })
   ],
   // Liste des règles à suivre par webpack
