@@ -35,6 +35,14 @@ module.exports = {
       filename : "contact.html",
     }),
     new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/creations.html'),
+      filename : "creations.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/precommande.html'),
+      filename : "precommande.html",
+    }),
+    new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './src/mentionlegales.html'),
       filename : "mentionlegales.html",
     }),

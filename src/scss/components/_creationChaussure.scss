@@ -1,0 +1,18 @@
+.c-creation__innerContainer {
+    display: flex;
+    flex-direction: row;
+    &.-colone1 {
+        overflow: auto;
+        padding: 40px 10px;
+        img {
+            padding-right: 10px;
+            overflow: auto;
+        } 
+    }
+    &.-colone2 {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        padding: 40px 20px 40px 10px;
+    }
+}
