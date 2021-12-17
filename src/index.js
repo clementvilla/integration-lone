@@ -7,8 +7,16 @@ import "./scss/main.scss";
 //import particules
 import "./script/particles.min"
 import "./script/app"
+import "./scss/main.scss";
 
-document.addEventListener( 'DOMContentLoaded', function() {
+//FAQ
+
+import "./script/faq";
+ 
+
+/*document.addEventListener( 'DOMContentLoaded', function() {
     var splide = new Splide( '.splide' );
     splide.mount();
-  } );
+  } );*/
+
+
