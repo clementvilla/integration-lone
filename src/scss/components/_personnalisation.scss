@@ -58,6 +58,8 @@
         height: 20%;
         bottom: 80px;
         top: inherit;
+        overflow-y: inherit;
+        overflow-x: scroll;
     }
     &__menu{
         align-items: center;
@@ -67,6 +69,7 @@
         @include large-down{
             flex-direction: row;
             width: fit-content;
+            height: 100%;
         }
         p{
             margin-bottom: 0px;
@@ -80,6 +83,7 @@
         justify-content: center;
         @include large-down{
             width: 150px;
+            height: 100%;
         }
     }
 }
