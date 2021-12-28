@@ -56,6 +56,12 @@ $x-large : 1200px;
   } 
 }
 
+@mixin large-down(){
+  @media screen and (max-width : ($large - 1)){
+      @content;
+  } 
+}
+
 @mixin large-up(){
   @media screen and (min-width : $large){
       @content;
