@@ -9,6 +9,22 @@ import "./script/app";
 const axios = require("axios")
 //Import style
 import "./scss/main.scss";
+//import particules
+import "./script/particles.min"
+import "./script/app"
+import "./scss/main.scss";
+
+//FAQ
+
+import "./script/faq";
+ 
+
+/*document.addEventListener( 'DOMContentLoaded', function() {
+    var splide = new Splide( '.splide' );
+    splide.mount();
+  } );*/
+
+
 
 //Initialisation slider
 document.addEventListener( 'DOMContentLoaded', function () {
@@ -19,44 +35,3 @@ document.addEventListener( 'DOMContentLoaded', function () {
   }
   ).mount();
 } );
-
-
-/*
-function getMarque(id) {
-  axios.get("http://localhost/wordpress/wp-lone/wp-json/wp/v2/marque_chaussure/" + id)
-    .then(function (reponse) {
-      let marque = reponse.data
-      console.log("nom " , marque.name)
-    })
-    .catch(function (erreur) {
-      console.log(erreur)
-    })
-}
-
-function getChaussure() {
-  axios.get("http://localhost/wordpress/wp-lone/wp-json/wp/v2/chaussure/")
-    .then(function (reponse) {
-      let maChaussure = reponse.data
-      maChaussure.forEach(function(maChaussure) {
-        console.log(maChaussure)
-
-        console.log("id :" , maChaussure.id)
-        console.log("date : " , maChaussure.date)
-        console.log("titre : " , maChaussure.title.rendered)
-
-        let marques = maChaussure.marque_chaussure
-        marques.forEach(function(marque){
-          getMarque(marque)
-          console.log("Marque : " , marque)
-        })
-      });
-    })
-    .catch(function (erreur) {
-      console.log(erreur)
-    })
-}
-
-getChaussure()
-getMarque()
-
-*/

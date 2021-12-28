@@ -22,7 +22,10 @@ $fontText: "Open Sans", Arial, sans-serif;
   }
   &.-colorWhite{
     color: $white;
-
+  }
+  &.-textCenter{
+    text-align: center;
+    margin: 40px auto;
   }
 }
 
