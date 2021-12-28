@@ -18,14 +18,6 @@ import "./scss/main.scss";
 
 import "./script/faq";
  
-
-/*document.addEventListener( 'DOMContentLoaded', function() {
-    var splide = new Splide( '.splide' );
-    splide.mount();
-  } );*/
-
-
-
 //Initialisation slider
 document.addEventListener( 'DOMContentLoaded', function () {
   new Splide( '#image-slider',{
