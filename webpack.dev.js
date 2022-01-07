@@ -50,11 +50,24 @@ module.exports = {
       template: path.resolve(__dirname, './src/mentionlegales.html'),
       filename : "mentionlegales.html",
     }),
-
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './src/faq.html'),
       filename : "faq.html",
+    }),
     })
+    ,new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/inscription.html'),
+      filename : "inscription.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/monCompte.html'),
+      filename : "monCompte.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/connexion.html'),
+      filename : "connexion.html",
+    }),
+    
   ],
   // Liste des règles à suivre par webpack
   module: {

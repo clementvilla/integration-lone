@@ -24,6 +24,19 @@ module.exports = {
       minify: true
     }),
     new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/inscription.html'),
+      filename : "inscription.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/monCompte.html'),
+      filename : "monCompte.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/connexion.html'),
+      filename : "connexion.html",
+    }),
+
+    new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './src/creations.html'),
       filename : "creations.html",
       minify: true
