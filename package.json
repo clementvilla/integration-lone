@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "@splidejs/splide": "^3.6.9",
+    "axios": "^0.24.0",
     "slick": "^1.12.2",
     "slick-carousel": "^1.8.1"
   }

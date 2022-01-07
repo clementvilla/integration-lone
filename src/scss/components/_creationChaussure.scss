@@ -1,18 +1,24 @@
-.c-creation__innerContainer {
-    display: flex;
-    flex-direction: row;
-    &.-colone1 {
-        overflow: auto;
-        padding: 40px 10px;
-        img {
-            padding-right: 10px;
-            overflow: auto;
-        } 
-    }
-    &.-colone2 {
+#creations {
+    .col-12 {
         display: flex;
-        flex-direction: column;
-        align-self: center;
-        padding: 40px 20px 40px 10px;
+    }
+    .wrapper-container {
+            @media screen and (max-width: 750px) {
+                padding: 0px;
+            }
+            .cont {
+                @media screen and (max-width: 750px) {
+                    margin: auto;
+                }
+            }
+    } 
+
+} 
+
+.c-creation {
+    padding: 0 20px;
+    &__texte {
+        margin-top: 0;
     }
 }
+

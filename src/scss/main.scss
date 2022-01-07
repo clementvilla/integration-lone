@@ -27,8 +27,13 @@
 * {
   box-sizing: border-box;
 }
+
 li{
   list-style: none;
+}
+
+img {
+  max-width: 100%;
 }
 
 html{
@@ -91,12 +96,3 @@ body{
   top: 0;
   left: 0
 }
-
-
-
-.creationsEntete{
-  padding: 100px 0px 0 0;
-  h1 {
-    text-align: center;
-  }
-} 

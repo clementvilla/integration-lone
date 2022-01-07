@@ -1,6 +1,7 @@
 .c-precommande__innerContainer {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     &.-colone1, &.-colone2, &.-colone3 {
         display: flex;
         flex-direction: column;
